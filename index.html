@@ -576,10 +576,12 @@ function enviarWhatsApp() {
     
     if (iii.value != "" && eee.value != "") {
 
-    var numero = "244937994298";
-    var mensagem = "Olá " + document.getElementById("nome").value + document.getElementById("sobrenome").value + "Envie essa mensagem para confirmar o cadastro!";
+    var numero = "244959363061";
+    var mensagem = "Olá " + document.getElementById("nome").value+ " " + document.getElementById("sobrenome").value + "Envie essa mensagem para confirmar o cadastro!";
     var url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
     window.open(url, '_blank');
+    document.getElementById("nome").value = "";
+    document.getElementById("sobrenome").value = "";  
 }
 
 }
